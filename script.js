@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const context = canvas.getContext('2d');
         const frameCount = 216; // The user provided 216 frames
         
-        // Use relative path for local structure (images in parent directory)
+        // Use relative path for internal project structure
         const currentFrame = index => (
-            `../ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
+            `hero-sequence/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
         );
 
         const images = [];
