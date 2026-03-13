@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BONZO Coffee - Premium specialty coffee in a sleek, modern atmosphere. Redefine your brew with our black and green aesthetic.">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="BONZO Coffee | Premium Modern Coffee">
+    <meta property="og:description" content="Experience uncompromising quality and pure energy at BONZO Coffee.">
+    <meta property="og:type" content="website">
+    
+    <title>BONZO Coffee | Redefine Your Brew</title>
+    
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "BONZO Coffee",
+      "image": "about-image.jpg",
+      "description": "Premium specialty coffee in a modern, sleek atmosphere.",
+      "url": "https://glovoapp.com",
+      "telephone": "06 75 40 10 41",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5 Rue Basra, Av. Casablanca",
+        "addressLocality": "Essaouira",
+        "addressRegion": "Marrakech-Safi",
+        "postalCode": "44000"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar" role="banner">
+        <a href="#home" class="logo" aria-label="BONZO Home">BONZO</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <nav id="main-nav" class="nav-links" role="navigation" aria-label="Main Navigation">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#visit">Visit</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section with Scroll Sequence -->
+        <section class="hero-scroll-container" id="home" aria-label="Introduction">
+            <div class="sticky-wrapper">
+                <!-- HTML5 Canvas for Image Sequence -->
+                <canvas id="hero-canvas" aria-hidden="true"></canvas>
+                
+                <div class="hero-content">
+                    <h1>WE ARE THE<br><span class="accent">VIBE DEALERS</span></h1>
+                    <p>Enter the world of BONZO. Uncompromising quality. Pure energy.</p>
+                </div>
+                
+                <div class="scroll-indicator" aria-hidden="true">
+                    <p>SCROLL TO EXPLORE</p>
+                    <div class="mouse"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section slide-up" aria-labelledby="about-heading" tabindex="-1">
+            <div class="container layout-grid">
+                <div class="about-text">
+                    <h2 id="about-heading">THE <span class="accent">BONZO</span> WAY</h2>
+                    <p>Located in the heart of Essaouira, Morocco, Bonzo Coffee Shop fuses premium roasted coffee with top-tier comfort food like our famous Block Burger. Whether you're craving a rich espresso, a savory Double Grilled Cheese, or a sweet Bubble Waffle, our black and green aesthetic mirrors our approach: bold, modern, and electrifying.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Lazy loaded optimal image with alt text -->
+                    <img src="about-image.jpg" alt="People hanging out outside the BONZO coffee shop" loading="lazy" width="800" height="1000" class="responsive-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section slide-up" aria-labelledby="menu-heading" tabindex="-1">
+            <div class="container">
+                <h2 id="menu-heading">OUR <span class="accent">MENU</span></h2>
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <article class="menu-item">
+                        <h3>Block Burger <span class="price" aria-label="price">$$</span></h3>
+                        <p>Our signature burger. A juicy, perfectly seared patty served with fresh ingredients and our secret neon sauce.</p>
+                    </article>
+                    
+                    <!-- Menu Item 2 -->
+                    <article class="menu-item">
+                        <h3>Double Grilled Cheese <span class="price" aria-label="price">$$</span></h3>
+                        <p>An indulgent classic featuring a blend of premium cheeses melted between perfectly toasted artisan bread.</p>
+                    </article>
+
+                    <!-- Menu Item 3 -->
+                    <article class="menu-item">
+                        <h3>Chicken Sandwich <span class="price" aria-label="price">$$</span></h3>
+                        <p>Crispy, spiced fried chicken breast topped with fresh slaw and served on a toasted brioche bun.</p>
+                    </article>
+                    
+                    <!-- Menu Item 4 -->
+                    <article class="menu-item">
+                        <h3>Bubble Waffle <span class="price" aria-label="price">$$</span></h3>
+                        <p>A warm, fluffy, and crispy hexagonal waffle wrapped around your choice of premium ice cream and toppings.</p>
+                    </article>
+
+                    <!-- Menu Item 5 -->
+                    <article class="menu-item">
+                        <h3>Void Espresso <span class="price" aria-label="price">$$</span></h3>
+                        <p>A dark, intense shot with notes of dark chocolate, black cherry, and infinite depth to fuel your night.</p>
+                    </article>
+                </div>
+
+                <!-- Reviews Marquee -->
+                <div class="reviews-marquee-container">
+                    <div class="reviews-marquee">
+                        <!-- Set 1 -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="ayoub.png" class="review-avatar" alt="Ayoub Jehouani">
+                                <div class="review-info">
+                                    <h4>Ayoub Jehouani</h4>
+                                    <span>Local Guide</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Honestly, the best smash burger I had in my life. Definitely recommended."</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="lukas.png" class="review-avatar" alt="Lukas Zadi">
+                                <div class="review-info">
+                                    <h4>Lukas Zadi</h4>
+                                    <span>Local Guide</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Great place full stop. The only real downside is the menu. It’s a direct assault on self-control... I won’t pretend to add something profound that the other five-star reviews haven’t already covered."</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="rachid.png" class="review-avatar" alt="Rachid Khobaz">
+                                <div class="review-info">
+                                    <h4>Rachid Khobaz</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Great spot! The presentation is neat and well-thought-out. Service is quick, staff is respectful and smiling. Highly recommend it—deserves 5 stars."</p>
+                        </div>
+                        <!-- Set 2 (Duplicate for Seamless Loop) -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="ayoub.png" class="review-avatar" alt="Ayoub Jehouani">
+                                <div class="review-info">
+                                    <h4>Ayoub Jehouani</h4>
+                                    <span>Local Guide</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Honestly, the best smash burger I had in my life. Definitely recommended."</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="lukas.png" class="review-avatar" alt="Lukas Zadi">
+                                <div class="review-info">
+                                    <h4>Lukas Zadi</h4>
+                                    <span>Local Guide</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Great place full stop. The only real downside is the menu. It’s a direct assault on self-control... I won’t pretend to add something profound that the other five-star reviews haven’t already covered."</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="rachid.png" class="review-avatar" alt="Rachid Khobaz">
+                                <div class="review-info">
+                                    <h4>Rachid Khobaz</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Great spot! The presentation is neat and well-thought-out. Service is quick, staff is respectful and smiling. Highly recommend it—deserves 5 stars."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit & Contact Section -->
+        <section id="visit" class="visit-section slide-up" aria-labelledby="visit-heading" tabindex="-1">
+            <div class="container layout-flex">
+                <div class="contact-info element-fade">
+                    <h2 id="visit-heading">VISIT <span class="accent">US</span></h2>
+                    <p>Step into our fully immersive environment or order online.</p>
+                    <address>
+                        <strong>BONZO Coffee Shop (BLOCK BURGER)</strong><br>
+                        5 Rue Basra, Av. Casablanca<br>
+                        Essaouira 44000, Morocco (G63R+XG)<br>
+                        <abbr title="Phone">P:</abbr> 06 75 40 10 41<br>
+                        <br>
+                        <strong>Hours of Operation:</strong><br>
+                        Open Daily starting at 8:00 PM<br>
+                        <br>
+                        <a href="https://glovoapp.com" target="_blank" class="accent" style="text-decoration: underline; font-weight: bold;">Order on Glovo</a>
+                    </address>
+                </div>
+                <div class="newsletter element-fade" style="transition-delay: 0.2s;">
+                    <h3>JOIN THE <span class="accent">NETWORK</span></h3>
+                    <p>Get updates on new origin roasts and exclusive underground events.</p>
+                    
+                    <!-- Form submission -->
+                    <form class="newsletter-form" id="subscribe-form" novalidate>
+                        <input type="email" id="email-input" placeholder="ENTER COMM-LINK (EMAIL)" required aria-label="Email address" autocomplete="email">
+                        <button type="submit" class="btn-accent" aria-label="Subscribe to newsletter">TRANSMIT</button>
+                    </form>
+                    <p id="form-msg" class="accent msg-hidden" aria-live="polite" style="display:none; margin-top: 1rem;"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container footer-content">
+            <div class="footer-logo">BONZO</div>
+            <div class="footer-social">
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/bonzo_coffeeshop" target="_blank" aria-label="Follow us on Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <!-- Phone Call Link -->
+                <a href="tel:+212675401041" aria-label="Call the owner">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 BONZO Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
